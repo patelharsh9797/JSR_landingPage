@@ -1,0 +1,58 @@
+.hero {
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),    url("../img/heroBG.png");
+  background-image: url("../img/heroBG.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 160vh;
+
+  .container {
+    padding-top: var(--header-size);
+  }
+
+  .heroBox {
+    --padding: 4rem;
+    padding-top: var(--padding);
+    width: 100%;
+    min-height: calc(100vh - var(--header-size) - var(--padding));
+  }
+}
+
+#sliderBox {
+  float: left;
+  width: 50%;
+}
+
+#heroImg {
+  float: right;
+  width: 50%;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: var(--size-700);
+}
+
+@media (max-width: 50em) {
+  #sliderBox {
+    // float: none;
+    width: 100%;
+  }
+
+  #heroImg {
+    // float: none;
+    width: 100%;
+  }
+}
+
+.faq-slider {
+  margin-top: 10rem;
+}
+.owl-carousel .item {
+  height: 10rem;
+  background: #4dc7a0;
+  padding: 1rem;
+}
