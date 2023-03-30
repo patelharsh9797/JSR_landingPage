@@ -1,7 +1,3 @@
-/*  */
-/* header styling */
-/*  */
-
 .header {
   padding-block: var(--size-300);
 
@@ -19,14 +15,33 @@
   -ms-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
 }
+
 .header.active {
   border-color: rgba(0, 0, 0, 0.6);
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
   color: var(--clr-neutral-900);
-  background: rgba(217, 217, 217, 0.55);
+  background: rgba(17, 17, 17, 0.25);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+
+  .logo a {
+    color: var(--clr-neutral-100);
+  }
+
+  .nav-list__item a:not([class]),
+  .nav-list-m .nav-list__item a:not([class]) {
+    color: var(--clr-neutral-900);
+  }
+
+  .nav-list .nav-list__item {
+    &.isInView::before,
+    &.isInView::after,
+    &.isInView a,
+    &:hover a {
+      color: var(--clr-neutral-100);
+    }
+  }
 }
 
 .primary-nav {
@@ -37,6 +52,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.logo a {
+  color: var(--clr-neutral-900);
+
+  transition: all linear 0.3s;
 }
 
 .header .hamburger {
@@ -156,7 +177,7 @@
   &.isInView::after {
     opacity: 1;
     transform: translateX(0px);
-    // color: var(--clr-accent-400);
+    color: var(--clr-neutral-900);
   }
   &.isInView a {
     color: var(--clr-neutral-900);

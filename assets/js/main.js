@@ -1,4 +1,4 @@
-$(".faq-slider")
+$(".hero-slider")
   .slick({
     dots: !0,
     infinite: !0,
