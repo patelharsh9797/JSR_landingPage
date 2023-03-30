@@ -146,6 +146,10 @@
   text-transform: uppercase;
 }
 
+.overflowHide {
+  // overflow: hidden;
+}
+
 /* Gradient Stuff */
 /* gradient text utility class */
 .gradient-text {
@@ -169,7 +173,9 @@
 .btn {
   --color: var(--clr-accent-400);
   cursor: pointer;
-  font-family: inherit;
+  font-weight: var(--fw-semi-bold);
+  font-size: var(--fs-400);
+  letter-spacing: 0.01rem;
   //   width: 8em;
   //   height: 2.6em;
   //   line-height: 2.5em;
@@ -181,9 +187,7 @@
   border: 2px solid var(--color);
   transition: all linear 0.5s;
   z-index: 1;
-  font-size: 17px;
   border-radius: var(--size-200);
-  font-weight: 500;
   color: var(--color);
 
   &::before {
@@ -246,7 +250,7 @@
 
   border: none;
   border-radius: 100%;
-  background-color: var(--clr-carousel-dot);
+  background-color: var(--clr-neutral-900);
   opacity: 0.5;
   text-indent: -9999px;
   transition: all linear 0.3s;
@@ -254,7 +258,7 @@
 
 .slick-dots li.slick-active button {
   opacity: 1;
-  background-color: var(--clr-carousel-dot__active);
+  background-color: var(--clr-accent-400);
 }
 
 .slick-dots button:hover {

@@ -5,15 +5,15 @@
   background-position: center;
   background-size: cover;
   width: 100%;
-  min-height: 160vh;
+  min-height: 150vh;
 
   .container {
     padding-top: var(--header-size);
   }
 
   .heroBox {
-    --padding: 4rem;
-    padding-top: var(--padding);
+    // --padding: 4rem;
+    // padding-top: var(--padding);
     width: 100%;
     min-height: calc(100vh - var(--header-size) - var(--padding));
   }
@@ -36,6 +36,10 @@
   gap: var(--size-700);
 }
 
+.faq-slider {
+  margin-top: 8rem;
+}
+
 @media (max-width: 50em) {
   #sliderBox {
     // float: none;
@@ -45,14 +49,11 @@
   #heroImg {
     // float: none;
     width: 100%;
-  }
-}
 
-.faq-slider {
-  margin-top: 10rem;
-}
-.owl-carousel .item {
-  height: 10rem;
-  background: #4dc7a0;
-  padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  .faq-slider {
+    margin-top: 1rem;
+  }
 }

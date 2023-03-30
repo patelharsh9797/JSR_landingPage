@@ -10,9 +10,9 @@
   --lg-border-400: rgb(209 213 219/ 0.5);
   /* Color properties  */
   --clr-accent-300: rgb(0 91 150 / 0.75);
-  --clr-accent-400: #f01a0b;
-  --clr-scrollBar: #4cadee;
-  --clr-scrollBar2: #4cadee9b;
+  --clr-accent-400: #f07a0b;
+  --clr-scrollBar: #693505;
+  --clr-scrollBar2: #f8b06d;
   --clr-primary-400: rgb(35 45 66);
   --clr-neutral-900: hsl(232, 12%, 13%);
   --clr-neutral-500: rgb(63 63 63 / 69%);
@@ -361,6 +361,7 @@ body {
   z-index: 1000;
   top: 0px;
   left: 0px;
+  border-bottom: 1px solid transparent;
   transition: all linear 0.3s;
   -webkit-transition: all linear 0.3s;
   -moz-transition: all linear 0.3s;
@@ -369,10 +370,11 @@ body {
 }
 
 .header.active {
+  border-color: rgba(0, 0, 0, 0.6);
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
   color: var(--clr-neutral-900);
-  background: rgba(17, 17, 17, 0.75);
+  background: rgba(217, 217, 217, 0.55);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
@@ -428,8 +430,12 @@ body {
 }
 
 .nav-list-m {
-  color: var(--clr-neutral-100);
-  background-color: var(--clr-neutral-100);
+  background: rgba(0, 0, 0, 0.83);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(5.1px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   margin-top: var(--size-200);
   padding: var(--size-400);
   border-radius: var(--size-200);
@@ -484,17 +490,17 @@ body {
 .nav-list-m .nav-list__item:hover::after {
   opacity: 0.5;
   transform: translateX(0px);
+  color: var(--clr-neutral-100);
 }
 .nav-list .nav-list__item.isInView::before, .nav-list .nav-list__item.isInView::after,
 .nav-list-m .nav-list__item.isInView::before,
 .nav-list-m .nav-list__item.isInView::after {
   opacity: 1;
   transform: translateX(0px);
-  color: var(--clr-accent-400);
 }
 .nav-list .nav-list__item.isInView a,
 .nav-list-m .nav-list__item.isInView a {
-  color: var(--clr-accent-400);
+  color: var(--clr-neutral-900);
 }
 
 @media (max-width: 50em) {
@@ -510,6 +516,13 @@ body {
   .nav-list-m.active {
     transform: translateX(0);
   }
+  .nav-list-m .nav-list__item.isInView a {
+    color: var(--clr-accent-400);
+  }
+  .nav-list-m .nav-list__item.isInView::before,
+  .nav-list-m .nav-list__item.isInView::after {
+    color: var(--clr-accent-400);
+  }
 }
 .hero {
   background-image: url("../img/heroBG.png");
@@ -517,14 +530,12 @@ body {
   background-position: center;
   background-size: cover;
   width: 100%;
-  min-height: 160vh;
+  min-height: 150vh;
 }
 .hero .container {
   padding-top: var(--header-size);
 }
 .hero .heroBox {
-  --padding: 4rem;
-  padding-top: var(--padding);
   width: 100%;
   min-height: calc(100vh - var(--header-size) - var(--padding));
 }
@@ -546,24 +557,22 @@ body {
   gap: var(--size-700);
 }
 
+.faq-slider {
+  margin-top: 8rem;
+}
+
 @media (max-width: 50em) {
   #sliderBox {
     width: 100%;
   }
   #heroImg {
     width: 100%;
+    margin-top: 2rem;
+  }
+  .faq-slider {
+    margin-top: 1rem;
   }
 }
-.faq-slider {
-  margin-top: 10rem;
-}
-
-.owl-carousel .item {
-  height: 10rem;
-  background: #4dc7a0;
-  padding: 1rem;
-}
-
 /* --------------------
     Utility Classes
 -------------------- */
@@ -730,7 +739,9 @@ body {
 .btn {
   --color: var(--clr-accent-400);
   cursor: pointer;
-  font-family: inherit;
+  font-weight: var(--fw-semi-bold);
+  font-size: var(--fs-400);
+  letter-spacing: 0.01rem;
   padding: 0.5rem 1.25rem;
   display: inline-block;
   position: relative;
@@ -738,9 +749,7 @@ body {
   border: 2px solid var(--color);
   transition: all linear 0.5s;
   z-index: 1;
-  font-size: 17px;
   border-radius: var(--size-200);
-  font-weight: 500;
   color: var(--color);
 }
 .btn::before {
@@ -796,7 +805,7 @@ body {
   padding: 0;
   border: none;
   border-radius: 100%;
-  background-color: var(--clr-carousel-dot);
+  background-color: var(--clr-neutral-900);
   opacity: 0.5;
   text-indent: -9999px;
   transition: all linear 0.3s;
@@ -804,7 +813,7 @@ body {
 
 .slick-dots li.slick-active button {
   opacity: 1;
-  background-color: var(--clr-carousel-dot__active);
+  background-color: var(--clr-accent-400);
 }
 
 .slick-dots button:hover {
