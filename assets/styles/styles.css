@@ -9,12 +9,14 @@
   --lg-border-900: rgb(209 213 219/ 1);
   --lg-border-400: rgb(209 213 219/ 0.5);
   /* Color properties  */
-  --clr-accent-300: rgb(0 91 150 / 0.75);
+  --clr-accent-900: #693505;
   --clr-accent-400: #f07a0b;
+  --clr-accent-300: rgb(0 91 150 / 0.75);
   --clr-scrollBar: #693505;
   --clr-scrollBar2: #f8b06d;
   --clr-primary-400: rgb(35 45 66);
   --clr-neutral-900: hsl(232, 12%, 13%);
+  --clr-neutral-600: hsl(150, 0%, 33%);
   --clr-neutral-500: rgb(63 63 63 / 69%);
   --clr-neutral-400: rgb(120 120 120);
   --clr-neutral-300: rgb(120 120 120 / 52%);
@@ -805,7 +807,7 @@ body {
   padding: 0;
   border: none;
   border-radius: 100%;
-  background-color: var(--clr-neutral-900);
+  background-color: var(--clr-neutral-600);
   opacity: 0.5;
   text-indent: -9999px;
   transition: all linear 0.3s;
@@ -813,7 +815,7 @@ body {
 
 .slick-dots li.slick-active button {
   opacity: 1;
-  background-color: var(--clr-accent-400);
+  background-color: var(--clr-accent-900);
 }
 
 .slick-dots button:hover {
