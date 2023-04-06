@@ -1,8 +1,7 @@
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("../img/banner.jpg");
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/banner.jpg");
   // background-image: url("../img/heroBG.png");
-  // background-image: url("../img/banner.jpg");
+  background-image: url("../img/banner.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -17,7 +16,24 @@
     // --padding: 4rem;
     // padding-top: var(--padding);
     width: 100%;
-    min-height: calc(100vh - var(--header-size));
+    // min-height: calc(100vh - var(--header-size));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--size-700);
+
+    &.height100Vh {
+      min-height: calc(100vh - var(--header-size));
+    }
+
+    &.spaceUp {
+      margin-top: 5rem;
+    }
+
+    &.col {
+      flex-direction: column;
+    }
   }
 }
 
@@ -39,15 +55,30 @@
 }
 
 .hero-slider {
-  margin-top: 8rem;
-  padding-block: var(--size-400);
   color: var(--clr-neutral-100);
+}
+
+.contactSideBar {
+  // background: var(--clr-accent-400);
+  background: #964c07;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+#contactForm {
+  width: 100%;
 }
 
 @media (max-width: 50em) {
   #sliderBox {
     // float: none;
     width: 100%;
+  }
+
+  #heroInfo {
+    text-align: center;
+    padding: 0;
   }
 
   #heroImg {

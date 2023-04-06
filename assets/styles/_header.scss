@@ -21,7 +21,7 @@
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
   color: var(--clr-neutral-900);
-  background: rgba(17, 17, 17, 0.25);
+  background: rgba(217, 217, 217, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 
@@ -38,6 +38,9 @@
     &.isInView::before,
     &.isInView::after,
     &.isInView a,
+    &.isActive::before,
+    &.isActive::after,
+    &.isActive a,
     &:hover a {
       color: var(--clr-neutral-100);
     }
@@ -174,12 +177,15 @@
   }
 
   &.isInView::before,
-  &.isInView::after {
+  &.isInView::after,
+  &.isActive::before,
+  &.isActive::after {
     opacity: 1;
     transform: translateX(0px);
     color: var(--clr-neutral-900);
   }
-  &.isInView a {
+  &.isInView a,
+  &.isActive a {
     color: var(--clr-neutral-900);
   }
 }
@@ -201,12 +207,15 @@
     transform: translateX(0);
   }
 
-  .nav-list-m .nav-list__item.isInView a {
+  .nav-list-m .nav-list__item.isInView a,
+  .nav-list-m .nav-list__item.isActive a {
     color: var(--clr-accent-400);
   }
 
   .nav-list-m .nav-list__item.isInView::before,
-  .nav-list-m .nav-list__item.isInView::after {
+  .nav-list-m .nav-list__item.isInView::after,
+  .nav-list-m .nav-list__item.isActive::before,
+  .nav-list-m .nav-list__item.isActive::after {
     color: var(--clr-accent-400);
   }
 }

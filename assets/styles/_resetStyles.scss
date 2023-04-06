@@ -13,8 +13,12 @@
   --lg-border-400: rgb(209 213 219/ 0.5);
 
   /* Color properties  */
+  --clr-body-bg: #f8ddc4;
+
+  --clr-accent-btn: #693505;
   --clr-accent-900: #693505;
-  --clr-accent-400: #f07a0b;
+  --clr-accent-400: #d78148;
+  --clr-accent-400-2: #d8854c;
   --clr-accent-300: rgb(0 91 150 / 0.75);
 
   --clr-scrollBar: #693505;
@@ -43,8 +47,8 @@
   /* --clr-sec-bg: #eff6ff; */
   --clr-sec-bg: #dce9fa;
 
-  --clr-formSecBox: rgba(249, 250, 251, 1);
-  --clr-formInput: rgba(243, 244, 246, 1);
+  // --clr-formSecBox: rgba(249, 250, 251, 1);
+  --clr-formInput: rgba(249, 250, 251, 1);
 
   /* font properties  */
   --ff-primary: "Inter", sans-serif;
@@ -210,6 +214,7 @@ html {
 body {
   font-family: var(--ff-primary);
   font-size: var(--fs-400);
+  background-color: var(--clr-body-bg);
   color: var(--clr-neutral-900);
   overflow-x: hidden !important;
 }

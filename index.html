@@ -8,6 +8,8 @@
   <title>JSR Landing Page</title>
 
   <!-- TODO Styles -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
   <link rel="stylesheet" href="./assets/styles/styles.css">
@@ -31,8 +33,9 @@
         <nav class="navigation">
           <div class="logo">
             <!-- <p class="fw-bold fs-primary-heading">Ai Word</p> -->
-            <a href="./index.html" class="fw-bold fs-primary-heading" style="text-decoration: none;">JSR
-              Solar</a>
+            <a href="./index.html" class="fw-bold fs-primary-heading" style="text-decoration: none;">
+              <img src="./assets/img/logo.png" width="150" alt="jsr logo">
+            </a>
           </div>
           <button class="hamburger hamburger--spin" type="button" aria-label="Menu" aria-controls="aside-navlist"
             data-hamBG="var(--clr-neutral-900)">
@@ -44,14 +47,14 @@
             <li class="nav-list__item isInView"><a href="javascript:void(0)" data-href="#home">Home</a></li>
             <li class="nav-list__item"><a href="javascript:void(0)" data-href="#about">About Us</a></li>
             <li class="nav-list__item"><a href="javascript:void(0)" data-href="#services">Services</a></li>
-            <li class="nav-list__item"><a href="javascript:void(0)" data-href="#contact">Contact Us</a></li>
+            <li class="nav-list__item"><a href="./contactUs.html">Contact Us</a></li>
           </ul>
         </nav>
         <ul role="list" class="nav-list-m">
           <li class="nav-list__item isInView"><a href="javascript:void(0)" data-href="#home">Home</a></li>
           <li class="nav-list__item"><a href="javascript:void(0)" data-href="#about">About Us</a></li>
           <li class="nav-list__item"><a href="javascript:void(0)" data-href="#services">Services</a></li>
-          <li class="nav-list__item"><a href="javascript:void(0)" data-href="#contact">Contact Us</a></li>
+          <li class="nav-list__item"><a href="./contactUs.html" data-href="">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -62,91 +65,98 @@
     <section class="section hero" id="home">
 
       <div class="container">
-        <div class="heroBox">
+
+        <div class="overflowHide">
+          <div class="heroBox height100Vh animate__animated animate__fadeInDown animate__delay-1s">
 
 
-          <div id="sliderBox">
-            <div class="hero-slider slider-side-arrow | container-s padding-block-700">
+            <div id="sliderBox">
+              <div class="hero-slider slider-side-arrow  | container-s padding-block-700">
 
-              <div class="sliderItem">
-                <div class="overflowHide">
-                  <h2 class="fs-slider-heading fw-bold | animate__animated" data-animation-in="animate__fadeInUp">
-                    Introducing World’s Longest
-                    Wind Turbine</h2>
+                <div class="sliderItem">
+                  <div class="">
+                    <h2 class="fs-slider-heading fw-bold | animate__animated" data-animation-in="animate__fadeInUp">
+                      Introducing World’s Longest
+                      Wind Turbine</h2>
+                  </div>
+                  <div class="">
+                    <p class="text-neutral-200 animate__animated" data-animation-in="animate__fadeInUp"
+                      data-delay-in=".75">
+                      Windtech redefines
+                      your relationship with energy, save
+                      money minimize your
+                      carbon footprint, take
+                      control of your power costs.
+                    </p>
+                  </div>
+                  <div class="">
+                    <button class="btn animate__animated" data-animation-in="animate__fadeInUp"
+                      data-delay-in="1.25">Read
+                      More</button>
+                  </div>
                 </div>
-                <div class="overflowHide">
-                  <p class="text-neutral-200 animate__animated" data-animation-in="animate__fadeInUp"
-                    data-delay-in=".75">
-                    Windtech redefines
-                    your relationship with energy, save
-                    money minimize your
-                    carbon footprint, take
-                    control of your power costs.
-                  </p>
-                </div>
-                <div class="overflowHide">
-                  <button class="btn animate__animated" data-animation-in="animate__fadeInUp" data-delay-in="1.25">Read
-                    More</button>
-                </div>
-              </div>
 
-              <div class="sliderItem">
-                <div class="overflowHide">
-                  <h2 class="fs-slider-heading fw-bold | animate__animated" data-animation-in="animate__fadeInUp">
-                    Introducing World’s Longest
-                    Wind Turbine</h2>
+                <div class="sliderItem">
+                  <div class="">
+                    <h2 class="fs-slider-heading fw-bold | animate__animated" data-animation-in="animate__fadeInUp">
+                      Introducing World’s Longest
+                      Wind Turbine</h2>
+                  </div>
+                  <div class="">
+                    <p class="text-neutral-200 animate__animated" data-animation-in="animate__fadeInUp"
+                      data-delay-in=".75">
+                      Windtech redefines
+                      your relationship with energy, save
+                      money minimize your
+                      carbon footprint, take
+                      control of your power costs.
+                    </p>
+                  </div>
+                  <div class="">
+                    <button class="btn animate__animated" data-animation-in="animate__fadeInUp"
+                      data-delay-in="1.25">Read
+                      More</button>
+                  </div>
                 </div>
-                <div class="overflowHide">
-                  <p class="text-neutral-200 animate__animated" data-animation-in="animate__fadeInUp"
-                    data-delay-in=".75">
-                    Windtech redefines
-                    your relationship with energy, save
-                    money minimize your
-                    carbon footprint, take
-                    control of your power costs.
-                  </p>
-                </div>
-                <div class="overflowHide">
-                  <button class="btn animate__animated" data-animation-in="animate__fadeInUp" data-delay-in="1.25">Read
-                    More</button>
-                </div>
-              </div>
 
-              <div class="sliderItem">
-                <div class="overflowHide">
-                  <h2 class="fs-slider-heading fw-bold | animate__animated animate__fadeInUp"
-                    data-animation-in="animate__fadeInUp">
-                    Introducing World’s Longest
-                    Wind Turbine</h2>
-                </div>
-                <div class="overflowHide">
-                  <p class="text-neutral-200 animate__animated  animate__fadeInUp" data-animation-in="animate__fadeInUp"
-                    data-delay-in=".75">
-                    Windtech redefines
-                    your relationship with energy, save
-                    money minimize your
-                    carbon footprint, take
-                    control of your power costs.
-                  </p>
-                </div>
-                <div class="overflowHide">
-                  <button class="btn animate__animated" data-animation-in="animate__fadeInUp" data-delay-in="1.25">Read
-                    More</button>
+                <div class="sliderItem">
+                  <div class="">
+                    <h2 class="fs-slider-heading fw-bold | animate__animated animate__fadeInUp"
+                      data-animation-in="animate__fadeInUp">
+                      Introducing World’s Longest
+                      Wind Turbine</h2>
+                  </div>
+                  <div class="">
+                    <p class="text-neutral-200 animate__animated  animate__fadeInUp"
+                      data-animation-in="animate__fadeInUp" data-delay-in=".75">
+                      Windtech redefines
+                      your relationship with energy, save
+                      money minimize your
+                      carbon footprint, take
+                      control of your power costs.
+                    </p>
+                  </div>
+                  <div class="">
+                    <button class="btn animate__animated" data-animation-in="animate__fadeInUp"
+                      data-delay-in="1.25">Read
+                      More</button>
+                  </div>
                 </div>
               </div>
             </div>
+
+            <div id="heroImg"><img src="./assets/img/slider_img.gif" alt="slider GIF"></div>
           </div>
-
-          <div id="heroImg"><img src="./assets/img/slider_img.gif" alt="slider GIF"></div>
-
         </div>
       </div>
-
 
     </section>
 
 
-    <section class="section padding-block-700" id="about">About,....</section>
+    <section class="section padding-block-700" id="about">
+
+
+    </section>
 
   </main>
 
