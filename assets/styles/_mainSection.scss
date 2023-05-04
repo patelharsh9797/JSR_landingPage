@@ -1,7 +1,8 @@
 .hero {
-  // background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/banner.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
+    url("../img/heroBG2.png");
   // background-image: url("../img/heroBG.png");
-  background-image: url("../img/banner.jpg");
+  // background-image: url("../img/heroBG2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -50,17 +51,17 @@
 .slick-initialized .slick-slide {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   gap: var(--size-700);
 }
 
 .hero-slider {
-  color: var(--clr-neutral-100);
+  // color: var(--clr-neutral-100);
 }
 
 .contactSideBar {
-  // background: var(--clr-accent-400);
-  background: #964c07;
+  background-color: var(--clr-accent-400);
+  color: var(--clr-neutral-900);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -68,6 +69,69 @@
 
 #contactForm {
   width: 100%;
+}
+
+.whoWeAreSection {
+  .imgDiv {
+    position: relative;
+    display: block;
+    isolation: isolate;
+
+    .imgRight {
+      display: block;
+      position: absolute;
+      z-index: 0;
+      right: 0;
+      top: 0;
+    }
+
+    .borderImg {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      left: 0;
+      border: 20px solid var(--clr-neutral-100);
+    }
+
+    @media (max-width: 50em) {
+      .imgRight {
+        position: static;
+      }
+      .borderImg {
+        display: none;
+      }
+    }
+  }
+
+  .whoWeAre_content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-700);
+  }
+
+  .whoWeAre_content-iconBox {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--size-400);
+      text-align: center;
+
+      li:not(:last-of-type) {
+        border-right: 2px dotted var(--lg-border-400);
+      }
+    }
+
+    @media (max-width: 30em) {
+      ul {
+        grid-template-columns: repeat(1, 1fr);
+
+        li:not(:last-of-type) {
+          border: none;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 50em) {
