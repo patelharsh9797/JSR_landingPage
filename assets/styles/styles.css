@@ -83,34 +83,11 @@
   --size-900: 4rem;
 }
 
-/* 
-@media (min-width:50em) {
-:root {
-
-    --fs-300: .7rem;
-    --fs-400: .8rem;
-    --fs-500: .9rem;
-    --fs-600: 1rem;
-    --fs-700: 1.25rem;
-    --fs-800: 1.5rem;
-    --fs-900: 2rem;
-
-    --size-100: 0.15rem;
-    --size-200: 0.25rem;
-    --size-300: 0.5rem;
-    --size-400: .75rem;
-    --size-500: 1rem;
-    --size-600: 1.25rem;
-    --size-700: 1.5rem;
-    --size-800: 2rem;
-    --size-900: 3rem;
-
-    --fs-primary-heading: var(--fs-900);
-    --fs-secondary-heading: var(--fs-700);
-    --fs-invoice: var(--fs-500);
-
-    }
-} */
+@media (max-width: 50em) {
+  :root {
+    --fs-sliderHeading: 2rem;
+  }
+}
 /* --------------------
 Resets
 -------------------- */
@@ -392,7 +369,9 @@ body {
 .header.active .nav-list-m .nav-list__item a:not([class]) {
   color: var(--clr-neutral-900);
 }
-.header.active .nav-list .nav-list__item.isInView a, .header.active .nav-list .nav-list__item.isActive a {
+.header.active .nav-list .nav-list__item.isInView a, .header.active .nav-list .nav-list__item.isActive a,
+.header.active .nav-list-m .nav-list__item.isInView a,
+.header.active .nav-list-m .nav-list__item.isActive a {
   color: var(--clr-accent-400);
 }
 
@@ -559,7 +538,7 @@ body {
   }
 }
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url("../img/heroBG2.png");
+  background-image: url("../img/heroBG2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -614,6 +593,9 @@ body {
   width: 100%;
 }
 
+.whoWeAreSection .grid > div {
+  min-height: 35rem;
+}
 .whoWeAreSection .imgDiv {
   position: relative;
   display: block;
@@ -635,8 +617,14 @@ body {
   border: 20px solid var(--clr-neutral-100);
 }
 @media (max-width: 50em) {
+  .whoWeAreSection .imgDiv {
+    text-align: center;
+  }
   .whoWeAreSection .imgDiv .imgRight {
     position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .whoWeAreSection .imgDiv .borderImg {
     display: none;
@@ -668,6 +656,12 @@ body {
 @media (max-width: 50em) {
   #sliderBox {
     width: 100%;
+    text-align: center !important;
+  }
+  #sliderBox .sliderItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   #heroInfo {
     text-align: center;

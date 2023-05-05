@@ -34,7 +34,8 @@
     color: var(--clr-neutral-900);
   }
 
-  .nav-list .nav-list__item {
+  .nav-list .nav-list__item,
+  .nav-list-m .nav-list__item {
     &.isInView a,
     &.isActive a {
       color: var(--clr-accent-400);

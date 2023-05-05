@@ -1,8 +1,8 @@
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
-    url("../img/heroBG2.png");
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
+  //   url("../img/heroBG2.png");
   // background-image: url("../img/heroBG.png");
-  // background-image: url("../img/heroBG2.png");
+  background-image: url("../img/heroBG2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -55,10 +55,6 @@
   gap: var(--size-700);
 }
 
-.hero-slider {
-  // color: var(--clr-neutral-100);
-}
-
 .contactSideBar {
   background-color: var(--clr-accent-400);
   color: var(--clr-neutral-900);
@@ -72,6 +68,10 @@
 }
 
 .whoWeAreSection {
+  .grid > div {
+    min-height: 35rem;
+  }
+
   .imgDiv {
     position: relative;
     display: block;
@@ -95,8 +95,13 @@
     }
 
     @media (max-width: 50em) {
+      text-align: center;
+
       .imgRight {
         position: static;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .borderImg {
         display: none;
@@ -136,8 +141,14 @@
 
 @media (max-width: 50em) {
   #sliderBox {
-    // float: none;
     width: 100%;
+    text-align: center !important;
+
+    .sliderItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   #heroInfo {

@@ -1,14 +1,11 @@
 const navLinks = document.querySelectorAll(".nav-list__item a");
 
-// // const hear = document.querySelector("header.header");
+// // const header = document.querySelector("header.header");
 const topMenuHeight = header.offsetHeight + 1;
 
+// TODO for link click event
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
-    // removeClass();
-    // link.parentElement.classList.add("isInView");
-
-    // removing open navbar in Mobile
     mobileMenu.classList.remove("active");
     hamburgerBtn.classList.remove("is-active");
 
@@ -29,31 +26,34 @@ navLinks.forEach((link) => {
   });
 });
 
+//TODO when the target element is in view
 // Create a new IntersectionObserver that will call the callback function
-// when the target element is in view
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const sectionId = entry.target.getAttribute("id");
+        console.log("sectionId", sectionId);
 
         const navItems = document.querySelectorAll(
           `.nav-list__item a[data-href="#${sectionId}"]`
         );
 
-        navLinks.forEach((link) =>
-          link.parentElement.classList.remove("isInView")
-        );
+        navLinks.forEach((link) => {
+          link.parentElement.classList.remove("isInView");
+        });
 
-        navItems.forEach((item) =>
-          item.parentElement.classList.add("isInView")
-        );
+        navItems.forEach((item) => {
+          // console.log(item.parentElement);
+          item.parentElement.classList.add("isInView");
+        });
       }
     });
   },
   {
     rootMargin: `-${topMenuHeight}px 0px -${topMenuHeight}px 0px`,
-    threshold: 0.5,
+    // threshold: 0.5,
   }
 );
 

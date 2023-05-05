@@ -3,7 +3,7 @@ $(".hero-slider")
     dots: !0,
     infinite: !0,
     autoplay: !0,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 10000,
     arrows: !0,
     speed: 1e3,
     prevArrow: "",
