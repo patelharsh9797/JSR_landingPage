@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
 :root {
   /* special sizes */
   --sidebar-navigation-100: 5rem;
@@ -52,17 +55,19 @@
   --clr-icon-blue: #4570dd;
   --clr-icon-green: #55c10e;
   // --clr-formSecBox: rgba(249, 250, 251, 1);
-  --clr-formInput: rgba(249, 250, 251, 1);
+  // --clr-formInput: rgba(249, 250, 251, 1);
+  --clr-formInput: rgba(144, 144, 144, 1);
 
   /* font properties  */
-  --ff-primary: "Inter", sans-serif;
+  // --ff-primary: "Roboto", sans-serif;
+  --ff-primary: "Source Sans Pro", sans-serif;
 
   --ff-body: var(--ff-primary);
   --ff-heading: var(--ff-primary);
 
   --fw-regular: 400;
-  --fw-semi-bold: 500;
-  --fw-bold: 600;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
 
   /* --fs-300: .9rem;
     --fs-400: 1rem;
@@ -109,6 +114,10 @@
   :root {
     --fs-sliderHeading: 2rem;
   }
+}
+
+::placeholder {
+  color: var(--clr-neutral-900);
 }
 
 /* --------------------

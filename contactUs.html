@@ -44,18 +44,22 @@
                         </span>
                     </button>
                     <ul role="list" class="nav-list">
-                        <li class="nav-list__item "><a href="./index.html#home" data-href="">Home</a></li>
-                        <li class="nav-list__item "><a href="./index.html#about" data-href="">About Us</a></li>
-                        <li class="nav-list__item"><a href="javascript:void(0)" data-href="#services">Services</a></li>
-                        <li class="nav-list__item isActive"><a href="./contactUs.html" data-href="">Contact
-                                Us</a></li>
+
+                        <li class="nav-list__item"><a href="./index.html#home" data-href="">Home</a></li>
+                        <li class="nav-list__item"><a href="./index.html#about" data-href="">About Us</a></li>
+                        <li class="nav-list__item"><a href="javascript:void(0)" data-href="#">Trade Shows</a></li>
+                        <li class="nav-list__item"><a href="javascript:void(0)" data-href="#">Pv Industry</a></li>
+                        <li class="nav-list__item"><a href="javascript:void(0)" data-href="#">Services</a></li>
+                        <li class="nav-list__item isActive"><a href="#">Contact Us</a></li>
                     </ul>
                 </nav>
                 <ul role="list" class="nav-list-m">
-                    <li class="nav-list__item"><a href="./index.html" data-href="">Home</a></li>
+                    <li class="nav-list__item"><a href="./index.html#home" data-href="">Home</a></li>
                     <li class="nav-list__item"><a href="./index.html#about" data-href="">About Us</a></li>
-                    <li class="nav-list__item"><a href="javascript:void(0)" data-href="">Services</a></li>
-                    <li class="nav-list__item isActive"><a href="./contactUs.html" data-href="">Contact Us</a></li>
+                    <li class="nav-list__item"><a href="javascript:void(0)" data-href="#">Trade Shows</a></li>
+                    <li class="nav-list__item"><a href="javascript:void(0)" data-href="#">Pv Industry</a></li>
+                    <li class="nav-list__item"><a href="javascript:void(0)" data-href="#">Services</a></li>
+                    <li class="nav-list__item isActive"><a href="#">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -63,90 +67,98 @@
     </header>
 
     <main>
+
         <section class="section hero">
 
             <div class=" container">
-                <div class="heroBox spaceUp col formFlex">
-                    <div class="overflowHide">
-                        <h2 class="fs-slider-heading fw-bold text-neutral-900 animate__animated animate__fadeInUpBig">
+                <div class="heroBox height100Vh formFlex gap-400">
+                    <div class=" overflowHide">
+                        <h2 class="fs-slider-heading fw-bold text-neutral-900 wow animate__animated animate__fadeIn"
+                            data-wow-delay="0ms" data-wow-duration="3s">
                             Contact
                             Us</h2>
                     </div>
-                    <div class="overflowHide">
-                        <div id="heroInfo"
-                            class="grid three-col grid-placeContent-center padding-inline-400 |   animate__animated animate__fadeInUp animate__delay-1s">
-                            <div class="col-2 formFlex text-neutral-900">
+                    <div class=" overflowHide">
+                        <div id="heroInfo" class="grid three-col grid-placeContent-center padding-inline-400 ">
+                            <div class="col-2 formFlex text-neutral-900 wow animate__animated animate__fadeInLeft"
+                                data-wow-delay="" data-wow-duration="2s">
                                 <h3 class="fs-primary-heading fw-semi-bold ">Contact Us For Queries</h3>
-                                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimnim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimnim
+                                    veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat.
                                     Duis
-                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat
                                     nulla
                                     pariatur. Excepteur sint occaecat.</p>
                             </div>
-                            <div>
+                            <div class="wow animate__animated animate__fadeInRight
+                            " data-wow-delay="" data-wow-duration="2s">
                                 <img src="./assets/img/contactHero.png" alt="contact hero">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </section>
 
-        <section class="section container padding-block-700">
+        <section class="section container padding-block-900">
+            <div class="overflowHide">
+                <div class="gradient-box grid three-col wow animate__animated animate__fadeInDown" data-wow-delay=" 0ms"
+                    data-wow-duration="2s" style="--gap:0;">
+                    <div class="col-2 padding-block-700 padding-inline-400">
 
-            <div class="gradient-box grid three-col" style="--gap:0;">
-                <div class="col-2 padding-block-700 padding-inline-400">
-
-                    <form action="" class="contactForm formFlex" id="contactForm">
-                        <div class="inputname">
-                            <div class="inputbox">
-                                <input type="text" name="name" placeholder="Name" required>
+                        <form action="" class="contactForm formFlex gap-700" id="contactForm">
+                            <div class="inputname">
+                                <div class="inputbox">
+                                    <input type="text" name="name" placeholder="Name" required>
+                                </div>
+                                <div class="inputbox">
+                                    <input type="email" name="email" placeholder="Email" required>
+                                </div>
                             </div>
                             <div class="inputbox">
-                                <input type="email" name="email" placeholder="Email" required>
+                                <input type="text" name="subject" id="subject" placeholder="Subject" required>
                             </div>
-                        </div>
-                        <div class="inputbox">
-                            <input type="text" name="subject" id="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="inputbox">
-                            <textarea cols="10" rows="4" name="message" class="require" placeholder="Message*"
-                                required></textarea>
-                        </div>
+                            <div class="inputbox">
+                                <textarea cols="10" rows="4" name="message" class="require" placeholder="Message*"
+                                    required></textarea>
+                            </div>
 
-                        <button class="btn btn-flex alignCenter padding-inline-900">Send</button>
-                    </form>
-                </div>
-                <div class="contactSideBar padding-block-700 padding-inline-400 formFlex">
-                    <div class="formFlex">
-                        <h4 class="fs-secondary-heading fw-bold">Contact Info :</h4>
-                        <p>Donec quis amet risus vulputate maximus eget eget arcu.</p>
+                            <button class="btn btn-flex alignCenter padding-inline-900">Send</button>
+                        </form>
                     </div>
-                    <br>
-                    <ul role="list" class="formFlex">
-                        <li class="d-flex gap-400 fw-semi-bold fs-third-heading">
-                            <span class="material-symbols-rounded">
-                                phone_iphone
-                            </span>
-                            <span>+800 568 322</span>
-                        </li>
-                        <li class="d-flex gap-400 fw-semi-bold fs-third-heading">
-                            <span class="material-symbols-rounded">
-                                mail
-                            </span>
-                            <span>sunwind@example.com</span>
-                        </li>
-                        <li class="d-flex gap-400 fw-semi-bold fs-third-heading">
-                            <span class="material-symbols-rounded">
-                                location_on
-                            </span>
-                            <span>Timposn, Suite 247 USA, 222</span>
-                        </li>
-                    </ul>
+                    <div class="contactSideBar padding-block-700 padding-inline-400 formFlex gap-700">
+                        <div class="formFlex gap-400">
+                            <h4 class="fs-secondary-heading fw-bold">Contact Info :</h4>
+                            <p>Donec quis amet risus vulputate maximus eget eget arcu.</p>
+                        </div>
+                        <br>
+                        <ul role="list" class="formFlex gap-400">
+                            <li class="d-flex gap-400 fw-semi-bold fs-third-heading">
+                                <span class="material-symbols-rounded">
+                                    phone_iphone
+                                </span>
+                                <span>+800 568 322</span>
+                            </li>
+                            <li class="d-flex gap-400 fw-semi-bold fs-third-heading">
+                                <span class="material-symbols-rounded">
+                                    mail
+                                </span>
+                                <span>sunwind@example.com</span>
+                            </li>
+                            <li class="d-flex gap-400 fw-semi-bold fs-third-heading">
+                                <span class="material-symbols-rounded">
+                                    location_on
+                                </span>
+                                <span>Timposn, Suite 247 USA, 222</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
         </section>
 
 
@@ -163,6 +175,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="./assets/js/slick-animation.min.js"></script>
+
+    <script src="./assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+    </script>
 
 </body>
 

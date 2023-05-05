@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
 :root {
   /* special sizes */
   --sidebar-navigation-100: 5rem;
@@ -38,14 +40,14 @@
   --clr-sec-bg: #dce9fa;
   --clr-icon-blue: #4570dd;
   --clr-icon-green: #55c10e;
-  --clr-formInput: rgba(249, 250, 251, 1);
+  --clr-formInput: rgba(144, 144, 144, 1);
   /* font properties  */
-  --ff-primary: "Inter", sans-serif;
+  --ff-primary: "Source Sans Pro", sans-serif;
   --ff-body: var(--ff-primary);
   --ff-heading: var(--ff-primary);
   --fw-regular: 400;
-  --fw-semi-bold: 500;
-  --fw-bold: 600;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
   /* --fs-300: .9rem;
     --fs-400: 1rem;
     --fs-500: 1.15rem;
@@ -88,6 +90,13 @@
     --fs-sliderHeading: 2rem;
   }
 }
+::-moz-placeholder {
+  color: var(--clr-neutral-900);
+}
+::placeholder {
+  color: var(--clr-neutral-900);
+}
+
 /* --------------------
 Resets
 -------------------- */
@@ -355,10 +364,10 @@ body {
 
 .header.active {
   border-color: rgba(0, 0, 0, 0.6);
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
   color: var(--clr-neutral-900);
-  background-color: rgba(120, 120, 120, 0.5);
+  background-color: rgb(255, 255, 255);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
@@ -562,6 +571,11 @@ body {
 }
 .hero .heroBox.col {
   flex-direction: column;
+}
+@media (max-width: 50em) {
+  .hero .heroBox {
+    flex-direction: column;
+  }
 }
 
 #sliderBox {
@@ -777,6 +791,11 @@ body {
   line-height: 1.1;
 }
 
+.fs-sliderHeading {
+  font-size: var(--fs-sliderHeading);
+  line-height: 1.1;
+}
+
 .fs-300 {
   font-size: var(--fs-300);
 }
@@ -841,7 +860,7 @@ body {
 
 .gradient-box {
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(144, 144, 144, 0.5);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -1143,6 +1162,10 @@ input[readOnly] {
 
 .gap-400 {
   gap: var(--size-400);
+}
+
+.gap-700 {
+  gap: var(--size-700);
 }
 
 .gap-900 {
