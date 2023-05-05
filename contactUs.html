@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="./assets/styles/icofont.min.css">
 
     <!-- TODO Script -->
     <script src="./assets/js/main.js" defer></script>
@@ -71,12 +71,12 @@
         <section class="section hero">
 
             <div class=" container">
-                <div class="heroBox height100Vh formFlex gap-400">
+                <div class="heroBox spaceUp formFlex gap-400">
                     <div class=" overflowHide">
-                        <h2 class="fs-slider-heading fw-bold text-neutral-900 wow animate__animated animate__fadeIn"
+                        <h1 class="fs-slider-heading fw-bold text-neutral-900 wow animate__animated animate__fadeIn"
                             data-wow-delay="0ms" data-wow-duration="3s">
                             Contact
-                            Us</h2>
+                            Us</h1>
                     </div>
                     <div class=" overflowHide">
                         <div id="heroInfo" class="grid three-col grid-placeContent-center padding-inline-400 ">
@@ -105,11 +105,26 @@
         </section>
 
         <section class="section container padding-block-900">
-            <div class="overflowHide">
+
+            <div class="overflowHide padding-block-700">
+
                 <div class="gradient-box grid three-col wow animate__animated animate__fadeInDown" data-wow-delay=" 0ms"
                     data-wow-duration="2s" style="--gap:0;">
-                    <div class="col-2 padding-block-700 padding-inline-400">
+                    <div class="col-2 padding-block-700 padding-inline-400 formFlex gap-900">
+                        <div class="formFlex gap-200">
+                            <h2 class="fs-primary-heading fw-bold ">Fill Free Contact Us
+                            </h2>
+                            <div class="bottom-dots clearfix">
+                                <span class="dot line-dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <p class="text-neutral-400">Donec quis magna sit amet risus vulputate maximus eget eget
+                                arcu.
+                                Praesent sed molestie tortor.</p>
 
+                        </div>
                         <form action="" class="contactForm formFlex gap-700" id="contactForm">
                             <div class="inputname">
                                 <div class="inputbox">
@@ -130,27 +145,36 @@
                             <button class="btn btn-flex alignCenter padding-inline-900">Send</button>
                         </form>
                     </div>
-                    <div class="contactSideBar padding-block-700 padding-inline-400 formFlex gap-700">
-                        <div class="formFlex gap-400">
-                            <h4 class="fs-secondary-heading fw-bold">Contact Info :</h4>
-                            <p>Donec quis amet risus vulputate maximus eget eget arcu.</p>
+                    <div class="contactSideBar padding-block-700 padding-inline-400 formFlex gap-900">
+                        <div class="formFlex gap-200">
+                            <h4 class="fs-primary-heading fw-bold">Contact Info :</h4>
+                            <div class="bottom-dots clearfix">
+                                <span class="dot line-dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <p class="text-neutral-700">Donec quis amet risus vulputate maximus eget eget arcu.</p>
                         </div>
-                        <br>
-                        <ul role="list" class="formFlex gap-400">
+
+                        <ul role="list" class="formFlex gap-700">
+                            <li class="fs-slider-heading fw-bold">
+                                <span>+800 568 322</span>
+                            </li>
                             <li class="d-flex gap-400 fw-semi-bold fs-third-heading">
-                                <span class="material-symbols-rounded">
+                                <span class="material-symbols-rounded text-neutral-700">
                                     phone_iphone
                                 </span>
                                 <span>+800 568 322</span>
                             </li>
                             <li class="d-flex gap-400 fw-semi-bold fs-third-heading">
-                                <span class="material-symbols-rounded">
+                                <span class="material-symbols-rounded text-neutral-700">
                                     mail
                                 </span>
                                 <span>sunwind@example.com</span>
                             </li>
                             <li class="d-flex gap-400 fw-semi-bold fs-third-heading">
-                                <span class="material-symbols-rounded">
+                                <span class="material-symbols-rounded text-neutral-700">
                                     location_on
                                 </span>
                                 <span>Timposn, Suite 247 USA, 222</span>
@@ -159,10 +183,34 @@
                     </div>
                 </div>
             </div>
+
         </section>
-
-
     </main>
+
+    <footer class="footer">
+        <div class="container padding-block-700">
+            <div class="grid three-col">
+                <div class="col formFlex gap-400">
+                    <img src="./assets/img/logo.png" width="150" alt="jsr logo">
+                    <p class="text-neutral-400">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis aks nostrud exercitation ullamco.</p>
+
+                    <ul role="list" class="footer-socials">
+                        <li><a class="" href="#"><span>F</span></a></li>
+                        <li><a class="" href="#"><span>T</span></a></li>
+                        <li><a class="" href="#"><span>L</span></a></li>
+                        <li><a class="" href="#"><span>I</span></a></li>
+
+                    </ul>
+
+
+                </div>
+                <div class="col">asd</div>
+                <div class="col">asd</div>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- TODO: CDN's -->
@@ -177,9 +225,9 @@
     <script src="./assets/js/slick-animation.min.js"></script>
 
     <script src="./assets/js/wow.min.js"></script>
+
     <script>
         new WOW().init();
-
     </script>
 
 </body>

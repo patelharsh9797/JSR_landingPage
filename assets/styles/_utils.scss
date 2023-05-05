@@ -32,6 +32,10 @@
   color: var(--clr-neutral-900);
 }
 
+.text-neutral-700 {
+  color: var(--clr-neutral-700);
+}
+
 .text-neutral-500 {
   color: var(--clr-neutral-500);
 }
@@ -123,6 +127,9 @@
 
 .padding-inline-400 {
   padding-inline: var(--size-400);
+}
+.padding-inline-700 {
+  padding-inline: var(--size-700);
 }
 
 .padding-inline-900 {

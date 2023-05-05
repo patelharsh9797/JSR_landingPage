@@ -1,0 +1,27 @@
+.footer {
+  border-top: 1px solid var(--clr-neutral-900);
+  background-color: var(--clr-neutral-100);
+
+  .footer-socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--size-400);
+
+    a {
+      display: block;
+      text-decoration: none;
+      font-weight: bold;
+      color: var(--clr-accent-400);
+      background-color: transparent;
+
+      padding: var(--size-200) var(--size-400);
+      border-radius: 100vmax;
+      transition: all linear 0.3s;
+
+      &:hover {
+        background-color: var(--clr-neutral-900);
+      }
+    }
+  }
+}

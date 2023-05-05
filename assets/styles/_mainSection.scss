@@ -73,7 +73,7 @@
 
 .whoWeAreSection {
   .grid > div {
-    min-height: 35rem;
+    min-height: 30rem;
   }
 
   .imgDiv {
@@ -95,7 +95,7 @@
       z-index: 1;
       bottom: 0;
       left: 0;
-      border: 20px solid var(--clr-neutral-100);
+      border: 20px solid var(--clr-body-bg);
     }
 
     @media (max-width: 50em) {
