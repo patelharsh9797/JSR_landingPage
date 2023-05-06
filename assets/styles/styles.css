@@ -728,6 +728,7 @@ body {
 }
 .footer .footerLink_box .foterLinks a:hover {
   color: var(--clr-accent-400);
+  opacity: 1;
 }
 
 /* --------------------

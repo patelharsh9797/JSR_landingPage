@@ -6,8 +6,7 @@ const topMenuHeight = header.offsetHeight + 1;
 const hash = window.location.hash;
 
 window.onload = () => {
-  if (hash) {
-  }
+  if (hash) scrollToSection(hash.substr(1));
 };
 
 // TODO for link click event
@@ -17,6 +16,7 @@ navLinks.forEach((link) => {
     hamburgerBtn.classList.remove("is-active");
 
     let linkID = e.target.getAttribute("data-href").substring(1);
+    scrollToSection(linkID);
   });
 });
 
