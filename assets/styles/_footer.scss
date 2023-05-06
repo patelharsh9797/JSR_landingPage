@@ -9,18 +9,38 @@
     gap: var(--size-400);
 
     a {
-      display: block;
+      display: inline-block;
       text-decoration: none;
       font-weight: bold;
+      font-size: var(--fs-500);
       color: var(--clr-accent-400);
       background-color: transparent;
 
-      padding: var(--size-200) var(--size-400);
+      border: 2px solid var(--clr-neutral-900);
+      width: 50px;
+      height: 50px;
+      // padding: var(--size-200) var(--size-400);
       border-radius: 100vmax;
       transition: all linear 0.3s;
 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
       &:hover {
         background-color: var(--clr-neutral-900);
+      }
+    }
+  }
+
+  .footerLink_box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .foterLinks {
+      font-weight: var(--fw-semi-bold);
+      a:hover {
+        color: var(--clr-accent-400);
       }
     }
   }
