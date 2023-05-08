@@ -47,8 +47,8 @@
               <span class="hamburger-inner"></span>
             </span>
           </button>
-          <ul role="list" class="nav-list">
-            <li class="nav-list__item isInView"><a href="javascript:void(0)" data-href="#home">Home</a></li>
+          <ul role="list" class="nav-list headerLinks">
+            <li class="nav-list__item isInView isActive"><a href="javascript:void(0)" data-href="#home">Home</a></li>
             <li class="nav-list__item"><a href="javascript:void(0)" data-href="#about">About Us</a></li>
             <li class="nav-list__item"><a href="javascript:void(0)" data-href="#">Trade Shows</a></li>
             <li class="nav-list__item"><a href="javascript:void(0)" data-href="#">Pv Industry</a></li>
@@ -56,8 +56,8 @@
             <li class="nav-list__item"><a href="./contactUs.html">Contact Us</a></li>
           </ul>
         </nav>
-        <ul role="list" class="nav-list-m">
-          <li class="nav-list__item isInView"><a href="javascript:void(0)" data-href="#home">Home</a></li>
+        <ul role="list" class="nav-list-m headerLinks">
+          <li class="nav-list__item isInView isActive"><a href="javascript:void(0)" data-href="#home">Home</a></li>
           <li class="nav-list__item"><a href="javascript:void(0)" data-href="#about">About Us</a></li>
           <li class="nav-list__item"><a href="javascript:void(0)" data-href="#">Trade Shows</a></li>
           <li class="nav-list__item"><a href="javascript:void(0)" data-href="#">Pv Industry</a></li>
@@ -155,7 +155,7 @@
 
 
     <section class="section whoWeAreSection container padding-block-900" id="about">
-      <div class="grid two-col" style="--gap:var(--size-800);">
+      <div class="grid two-col">
 
         <div class="imgDiv overflowHide">
           <div class="imgRight wow animate__animated animate__fadeInRight " data-wow-delay=" 0ms"
@@ -200,18 +200,17 @@
                 </p>
               </div>
             </div>
-            <div class="whoWeAre_content-iconBox wow animate__animated animate__fadeInUp" data-wow-delay=" 0ms"
-              data-wow-duration="2s">
+            <div class="whoWeAre_content-iconBox ">
               <ul role="list">
-                <li>
+                <li class="wow animate__animated animate__fadeInUp" data-wow-delay=" 0ms" data-wow-duration="2s">
                   <div class="flat-icon icon-blue"><span class="flaticon-solar-energy"></span></div>
                   <p class="fw-bold fs-300 text-uppercase text-center">save Energy <br> for world</p>
                 </li>
-                <li>
+                <li class="wow animate__animated animate__fadeInUp" data-wow-delay=" 0ms" data-wow-duration="2s">
                   <div class="flat-icon icon-green"><span class="flaticon-solar-panel"></span></div>
                   <p class="fw-bold fs-300 text-uppercase text-center">residentials <br> solutions</p>
                 </li>
-                <li>
+                <li class="wow animate__animated animate__fadeInUp" data-wow-delay=" 0ms" data-wow-duration="2s">
                   <div class="flat-icon icon-blue"><span class="flaticon-forest"></span></div>
                   <p class="fw-bold fs-300 text-uppercase text-center">get energy
                     <br> forests
@@ -225,9 +224,11 @@
 
     </section>
 
-    <section class="section easyToUseSection padding-block-900 bg-sec" id="">
-      <div class="container">
-        <div class="formFlex align-item-center justify-content-center gap-400">
+    <section class="section easyToUseSection padding-block-900 bg-sec">
+      <div class="container overflowHide">
+        <div
+          class="formFlex align-item-center justify-content-center text-center gap-400 wow animate__animated animate__fadeInDown"
+          data-wow-delay=" 0ms" data-wow-duration="2s">
           <div class="formFlex align-item-center justify-content-center gap-200">
             <h2 class="fs-third-heading fw-semi-bold">Easy To Use</h2>
             <div class="bottom-dots clearfix">
@@ -243,9 +244,11 @@
           <h3 class="fs-slider-heading fw-bold text-accent-400">It's Safe Compared To Electricity</h3>
         </div>
 
-        <div class="grid three-row padding-block-900">
-          <div class="col grid three-col" style="--gap:var(--size-200);">
-            <div></div>
+        <div class="overflowHide formFlex gap-700 padding-top-900">
+          <div class="grid three-col  wow animate__animated animate__fadeInDown" data-wow-delay="ms"
+            data-wow-duration="2s" style="--gap:var(--size-400);">
+
+            <div class=""></div>
             <div class="easyCard formFlex gap-700 text-center">
               <h3 class="fs-secondary-heading fw-bold text-accent-400">Technical Consulting</h3>
               <div class="formFlex gap-400">
@@ -254,51 +257,82 @@
                   execution.</p>
               </div>
             </div>
-            <div></div>
+            <div class=""></div>
+
+
+
           </div>
 
-          <div class="col grid three-col" style="--gap:var(--size-200);">
-            <div class="easyCard formFlex gap-700 text-center">
-              <h3 class="fs-secondary-heading fw-bold text-accent-400">In-Process & Pre-Dispatch Inspection</h3>
-              <div class="formFlex gap-400">
-                <p class="fw-semi-bold text-neutral-600">Manufacturing end-materials, in-process inspections to validate
-                  quality of PV modules on its inception. OVendor evaluation and selection to select the best
-                  manufacturing facility.</p>
-              </div>
-            </div>
-            <div></div>
-            <div class="easyCard formFlex gap-700 text-center">
-              <h3 class="fs-secondary-heading fw-bold text-accent-400">Drone & Manual Thermography</h3>
-              <div class="formFlex gap-400">
-                <p class="fw-semi-bold text-neutral-600">Periodic Thermography inspection during service phase with
-                  calibrated thermal camera or best in class thermal drone camera for MW scale quick inspection.</p>
+          <div class="overflowHide">
+            <div class="grid three-col" style="--gap:var(--size-400);">
 
+              <div class="formFlex gap-400 overflowHide">
+                <div class="overflowHide">
+                  <div class="easyCard formFlex gap-700 text-center wow animate__animated animate__fadeInDown"
+                    data-wow-delay="0ms" data-wow-duration="2s">
+                    <h3 class="fs-secondary-heading fw-bold text-accent-400">In-Process & Pre-Dispatch Inspection</h3>
+                    <div class="formFlex gap-400">
+                      <p class="fw-semi-bold text-neutral-600">Manufacturing end-materials, in-process inspections to
+                        validate
+                        quality of PV modules on its inception. OVendor evaluation and selection to select the best
+                        manufacturing facility.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="overflowHide">
+                  <div class="easyCard formFlex gap-700 text-center order-1 wow animate__animated animate__fadeInDown"
+                    data-wow-delay="0ms" data-wow-duration="2s">
+                    <h3 class="fs-secondary-heading fw-bold text-accent-400">Drone & Manual Thermography</h3>
+                    <div class="formFlex gap-400">
+                      <p class="fw-semi-bold text-neutral-600">Periodic Thermography inspection during service phase
+                        with
+                        calibrated thermal camera or best in class thermal drone camera for MW scale quick inspection.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
+
+              <div class="overflowHide">
+                <div
+                  class="d-flex align-item-center justify-content-center padding-block-700 wow animate__animated animate__fadeInDown"
+                  data-wow-delay="0ms" data-wow-duration="2s">
+                  <img src="./assets/img/robote.png" alt="robote" width="300">
+                </div>
+              </div>
+
+              <div class="formFlex gap-400 order-1">
+                <div class="overflowHide">
+                  <div class="easyCard formFlex gap-700 text-center wow animate__animated animate__fadeInDown"
+                    data-wow-delay="0ms" data-wow-duration="2s">
+                    <h3 class="fs-secondary-heading fw-bold text-accent-400">On Site EL Inspection</h3>
+                    <div class="formFlex gap-400">
+                      <p class="fw-semi-bold text-neutral-600">Identify the effects of transportation, installation and
+                        operation practices with detailed on site EL inspection to identify the cell level defects.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="overflowHide">
+                  <div class="easyCard formFlex gap-700 text-center wow animate__animated animate__fadeInDown"
+                    data-wow-delay="0ms" data-wow-duration="2s">
+                    <h3 class="fs-secondary-heading fw-bold text-accent-400">On Site IV Curve Analysis</h3>
+                    <div class="formFlex gap-400">
+                      <p class="fw-semi-bold text-neutral-600">Measure the degradation of PV module on site. Analyze the
+                        string level performance to identify the preventive actions.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
 
-          <div class="col grid three-col " style="--gap:var(--size-200);">
-            <div class="easyCard formFlex gap-700 text-center">
-              <h3 class="fs-secondary-heading fw-bold text-accent-400">On Site EL Inspection</h3>
-              <div class="formFlex gap-400">
-                <p class="fw-semi-bold text-neutral-600">Identify the effects of transportation, installation and
-                  operation practices with detailed on site EL inspection to identify the cell level defects.</p>
-              </div>
-            </div>
-            <div></div>
-            <div class="easyCard formFlex gap-700 text-center">
-              <h3 class="fs-secondary-heading fw-bold text-accent-400">On Site IV Curve Analysis</h3>
-              <div class="formFlex gap-400">
-                <p class="fw-semi-bold text-neutral-600">Measure the degradation of PV module on site. Analyze the
-                  string level performance to identify the preventive actions.</p>
-              </div>
-            </div>
-          </div>
+
         </div>
-
-
-      </div>
     </section>
+
+
 
   </main>
 

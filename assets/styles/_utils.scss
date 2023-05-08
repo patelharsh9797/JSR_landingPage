@@ -144,6 +144,10 @@
   padding-inline: var(--size-900);
 }
 
+.padding-top-900 {
+  padding-top: var(--size-900);
+}
+
 .padding-block-900 {
   padding-block: var(--size-900);
 }
@@ -546,7 +550,11 @@ input[readOnly] {
   color: var(--clr-icon-green);
 }
 
-// Flex stuff
+//display stuff
+
+.d-none {
+  display: none;
+}
 
 .formFlex {
   display: flex;

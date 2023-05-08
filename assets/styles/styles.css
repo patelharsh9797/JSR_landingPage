@@ -667,13 +667,20 @@ body {
     border: none;
   }
 }
+@media (max-width: 50em) {
+  .whoWeAreSection .grid > div {
+    min-height: 5rem;
+  }
+}
 
 .easyToUseSection .easyCard {
   cursor: pointer;
-  padding: var(--size-400);
+  min-height: 14rem;
+  padding: var(--size-600);
   border-radius: var(--size-400);
-  border: 2px solid var(--clr-neutral-700);
+  border: 2px solid transparent;
   background-color: var(--clr-neutral-100);
+  box-shadow: 0px 0px 20px 0px rgba(131, 149, 255, 0.14);
   transition: all linear 0.3s;
 }
 .easyToUseSection .easyCard:hover {
@@ -893,6 +900,10 @@ body {
 
 .padding-inline-900 {
   padding-inline: var(--size-900);
+}
+
+.padding-top-900 {
+  padding-top: var(--size-900);
 }
 
 .padding-block-900 {
@@ -1217,6 +1228,10 @@ input[readOnly] {
 
 .flat-icon.icon-green {
   color: var(--clr-icon-green);
+}
+
+.d-none {
+  display: none;
 }
 
 .formFlex {

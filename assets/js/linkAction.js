@@ -33,14 +33,13 @@ const observer = new IntersectionObserver(
           `.nav-list__item a[data-href="#${sectionId}"]`
         );
 
-        navLinks.forEach((link) => {
-          link.parentElement.classList.remove("isInView");
-        });
+        linkActive(navItems);
+      } else {
+        const homeLinks = document.querySelectorAll(
+          ".headerLinks a[data-href='#home']"
+        );
 
-        navItems.forEach((item) => {
-          // console.log(item.parentElement);
-          item.parentElement.classList.add("isInView");
-        });
+        linkActive(homeLinks);
       }
     });
   },
@@ -50,7 +49,7 @@ const observer = new IntersectionObserver(
   }
 );
 
-const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll("section[id]");
 sections.forEach((section) => observer.observe(section));
 
 // TODO functions
@@ -66,5 +65,15 @@ function scrollToSection(id) {
   window.scrollTo({
     top: scrollTop,
     behavior: "smooth",
+  });
+}
+
+function linkActive(elements) {
+  navLinks.forEach((link) => {
+    link.parentElement.classList.remove("isInView", "isActive");
+  });
+
+  elements.forEach((elem) => {
+    elem.parentElement.classList.add("isInView");
   });
 }
