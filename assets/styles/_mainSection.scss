@@ -143,6 +143,27 @@
   }
 }
 
+.easyToUseSection {
+  .easyCard {
+    cursor: pointer;
+    padding: var(--size-400);
+    border-radius: var(--size-400);
+    border: 2px solid var(--clr-neutral-700);
+    background-color: var(--clr-neutral-100);
+    transition: all linear 0.3s;
+
+    &:hover {
+      border-color: var(--clr-accent-400);
+    }
+  }
+
+  @media (max-width: 70em) and (min-width: 50em) {
+    .three-col {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
 @media (max-width: 50em) {
   #sliderBox {
     width: 100%;
