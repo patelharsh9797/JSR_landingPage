@@ -189,10 +189,10 @@
 .gradient-box {
   overflow: hidden;
   border-radius: var(--size-400);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  // border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 // TODO Buttons
@@ -409,9 +409,13 @@
   border-radius: var(--size-400);
   width: 100%;
   transition: all linear 0.3s;
-  font-weight: var(--fw-semi-bold);
   background-color: var(--clr-formInput);
-  color: var(--clr-accent-400);
+  color: var(--clr-neutral-900);
+  font-weight: var(--fw-semi-bold);
+
+  &:is(:hover, :focus-within, :valid) {
+    background-color: var(--clr-neutral-200);
+  }
 }
 
 .inputbox > label {
@@ -438,13 +442,6 @@
 
 .inputbox > textarea {
   resize: none;
-}
-
-.inputbox > input:is(:hover, :focus-within),
-.inputbox > textarea:is(:hover, :focus-within),
-.inputbox > select:is(:hover, :focus-within),
-.passwordInput:is(:hover, :focus-within) {
-  border-color: var(--clr-accent-400);
 }
 
 input[type="file"]::file-selector-button {

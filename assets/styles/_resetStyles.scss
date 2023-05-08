@@ -57,7 +57,9 @@
   --clr-icon-green: #55c10e;
   // --clr-formSecBox: rgba(249, 250, 251, 1);
   // --clr-formInput: rgba(249, 250, 251, 1);
-  --clr-formInput: hsl(232, 12%, 13%);
+  // --clr-formInput: hsl(232, 12%, 13%);
+  // --clr-formInput: #e8f5ff;
+  --clr-formInput: rgb(200 200 200);
 
   /* font properties  */
   // --ff-primary: "Roboto", sans-serif;
@@ -115,10 +117,6 @@
   :root {
     --fs-sliderHeading: 2rem;
   }
-}
-
-::placeholder {
-  color: var(--clr-neutral-400);
 }
 
 /* --------------------
