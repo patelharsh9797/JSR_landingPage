@@ -694,6 +694,51 @@ body {
   }
 }
 
+.featuresSection .grid .col {
+  position: relative;
+}
+.featuresSection .grid .col .imageDiv {
+  border-radius: var(--size-400);
+  overflow: hidden;
+  width: 90%;
+}
+.featuresSection .grid .col .imageDiv img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: all linear 0.5s;
+}
+.featuresSection .grid .col .imageDiv img:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 50em) {
+  .featuresSection .grid .col .imageDiv {
+    margin-inline: auto;
+  }
+}
+.featuresSection .grid .col .icon-box {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 120px;
+  font-size: 54px;
+  line-height: 120px;
+  color: #52c306;
+  background: #ffffff;
+  text-align: center;
+  border-radius: 50%;
+  transition: all linear 0.5s;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 56em) {
+  .featuresSection .grid .col .icon-box {
+    left: 0;
+  }
+}
+
 @media (max-width: 50em) {
   #sliderBox {
     width: 100%;
