@@ -571,6 +571,10 @@ input[readOnly] {
   justify-content: center;
 }
 
+.justify-content-end {
+  justify-content: end;
+}
+
 .alignCenter {
   align-self: center;
 }
@@ -657,5 +661,12 @@ input[readOnly] {
 
   .order-1 {
     order: -1;
+  }
+
+  .sm-text-center {
+    text-align: center;
+  }
+  .sm-justify-content-center {
+    justify-content: center;
   }
 }

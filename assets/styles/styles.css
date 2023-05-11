@@ -694,15 +694,19 @@ body {
   }
 }
 
+.featuresSection .grid {
+  gap: 5rem;
+}
 .featuresSection .grid .col {
   position: relative;
 }
 .featuresSection .grid .col .imageDiv {
   border-radius: var(--size-400);
   overflow: hidden;
-  width: 90%;
 }
 .featuresSection .grid .col .imageDiv img {
+  height: 25rem;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -721,7 +725,8 @@ body {
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
+  margin-top: -60px;
+  margin-right: -50px;
   width: 120px;
   height: 120px;
   font-size: 54px;
@@ -733,9 +738,16 @@ body {
   transition: all linear 0.5s;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
 }
+.featuresSection .grid .col .icon-box.alterIcon {
+  margin-left: -50px;
+  left: 0;
+}
 @media (max-width: 56em) {
   .featuresSection .grid .col .icon-box {
     left: 0;
+  }
+  .featuresSection .grid .col .icon-box.alterIcon {
+    margin-left: 0;
   }
 }
 
@@ -1295,6 +1307,10 @@ input[readOnly] {
   justify-content: center;
 }
 
+.justify-content-end {
+  justify-content: end;
+}
+
 .alignCenter {
   align-self: center;
 }
@@ -1376,5 +1392,11 @@ input[readOnly] {
   }
   .order-1 {
     order: -1;
+  }
+  .sm-text-center {
+    text-align: center;
+  }
+  .sm-justify-content-center {
+    justify-content: center;
   }
 }/*# sourceMappingURL=styles.css.map */

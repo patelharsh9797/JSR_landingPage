@@ -49,6 +49,20 @@ const observer = new IntersectionObserver(
   }
 );
 
+const secObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("now_inView");
+    } else {
+      entry.target.classList.remove("now_inView");
+    }
+  });
+});
+
+const featureSec = document.querySelector("section.featuresSection"); // Define secs before using secObserver.observe(sec)
+console.log(featureSec);
+secObserver.observe(featureSec);
+
 const sections = document.querySelectorAll("section[id]");
 sections.forEach((section) => observer.observe(section));
 
