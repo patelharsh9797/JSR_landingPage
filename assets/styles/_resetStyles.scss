@@ -25,11 +25,14 @@
   --clr-accent-400: #f5681a;
   --clr-accent-400-2: #f5681a;
   --clr-accent-300: rgb(245 104 26/0.75);
+  --clr-accent-200: #f8722a;
+  --clr-accent-100: #fd894b;
 
   --clr-scrollBar: #f5681a;
   --clr-scrollBar2: #f8b06d;
   --clr-primary-400: #406fe6;
 
+  --clr-neutral-1000: hsl(0, 0%, 0%);
   --clr-neutral-900: hsl(232, 12%, 13%);
   --clr-neutral-700: rgb(50 44 44);
   --clr-neutral-600: hsl(150, 0%, 33%);
@@ -92,6 +95,8 @@
 
   --fs-icon: 4rem;
   --fs-sliderHeading: 2.5rem;
+  --fs-3rem: 3rem;
+  --fs-4rem: 4rem;
   /* --fs-900: 2.25rem; */
 
   --fs-body: var(--fs-400);

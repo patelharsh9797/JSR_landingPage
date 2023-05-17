@@ -60,7 +60,6 @@ const secObserver = new IntersectionObserver((entries) => {
 });
 
 const featureSec = document.querySelector("section.featuresSection"); // Define secs before using secObserver.observe(sec)
-console.log(featureSec);
 secObserver.observe(featureSec);
 
 const sections = document.querySelectorAll("section[id]");

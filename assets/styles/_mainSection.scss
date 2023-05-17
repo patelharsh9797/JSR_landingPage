@@ -249,6 +249,31 @@
   }
 }
 
+.whyChooseUs {
+  .whyChooseUs_cardBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: var(--size-400);
+  }
+
+  .gradient-box {
+    position: relative;
+
+    .circleBox {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin-right: -4rem;
+      margin-bottom: -4rem;
+      aspect-ratio: 1;
+      width: 8rem;
+      border-radius: 100vmax;
+      // background-color: var(--clr-accent-100);
+      background-color: var(--clr-sec-bg);
+    }
+  }
+}
+
 @media (max-width: 50em) {
   #sliderBox {
     width: 100%;
