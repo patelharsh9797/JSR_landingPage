@@ -720,6 +720,9 @@ body {
   .featuresSection .grid .col .imageDiv {
     margin-inline: auto;
   }
+  .featuresSection .grid .col .imageDiv img {
+    height: 15rem;
+  }
 }
 .featuresSection .grid .col .icon-box {
   position: absolute;
@@ -745,6 +748,7 @@ body {
 @media (max-width: 56em) {
   .featuresSection .grid .col .icon-box {
     left: 0;
+    bottom: 0 !important;
   }
   .featuresSection .grid .col .icon-box.alterIcon {
     margin-left: 0;

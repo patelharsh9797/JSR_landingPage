@@ -206,6 +206,10 @@
 
       @media (max-width: 50em) {
         margin-inline: auto;
+
+        img {
+          height: 15rem;
+        }
       }
     }
 
@@ -234,7 +238,7 @@
 
       @media (max-width: 56em) {
         left: 0;
-        // top: 50%;
+        bottom: 0 !important;
         // margin: 0 -60px 0px 0px;
         // transform: translate(-50%, -50%);
         &.alterIcon {
